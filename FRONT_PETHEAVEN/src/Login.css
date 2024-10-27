@@ -1,0 +1,111 @@
+/* Estilo futurista para el formulario de login */
+
+.login-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right, 
+    #000000 20%,       /* Negro cubre el 20% del ancho */
+    #001f3f 80%        /* Azul marino oscuro aparece gradualmente hasta el 80% */
+  );
+  padding: 0 20px;
+}
+
+
+
+
+.login-container {
+  flex: 1;
+  max-width: 500px; /* Definir un ancho fijo para el recuadro del formulario */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  margin-left: 300px; /* Desplazar el recuadro del formulario desde el costado izquierdo */
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.login-logo img {
+  max-width: 900px; /* Aumentar el tamaño del logo */
+  height: auto;
+}
+
+.login-form h1 {
+  font-size: 2.5rem;
+  color: #ec9926; /* Color principal */
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ec9926; /* Color principal para las etiquetas */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #fef8f8; /* Fondo de los inputs */
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: 2px solid #ec9926; /* Efecto de foco */
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #ec9926; /* Color del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d61b6b; /* Color al pasar el ratón */
+}
+
+.error-message {
+  color: #ff4c4c; /* Color rojo para el mensaje de error */
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Esto agrega un margen entre los botones */
+}
+
+.btn {
+  margin-bottom: 10px; /* Esto asegura que haya un espacio entre el botón de inicio de sesión tradicional y el de Google */
+}
